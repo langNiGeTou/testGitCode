@@ -1,0 +1,23 @@
+platform :ios, '10.0'
+
+# 忽略pod警告
+inhibit_all_warnings!
+
+target "LegalAssistant" do
+  
+  use_frameworks!
+
+  pod 'AFNetworking', '~> 4.0.1'
+
+  pod 'SocketRocket', '~> 0.4.2'
+
+  pod 'SDWebImage', '~> 5.0.1'
+
+  pod 'Masonry', '~> 1.1.0'
+  
+  pod 'TTTAttributedLabel', '~> 2.0.0'
+  
+  pod 'MJRefresh', '~> 3.6.1'
+  
+  
+end

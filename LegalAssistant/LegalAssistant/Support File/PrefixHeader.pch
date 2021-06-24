@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  LegalAssistant
+//
+//  Created by lang on 2021/6/15.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
+#import "ProjectConst.h"
+#import "NSNumber+GC.h"
+#import "SACommon.h"
+#import "BaseNavViewController.h"
+
+//系统版本判断
+#define IOS12_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"12.0" options:NSNumericSearch] != NSOrderedAscending )
+#define IOS11_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"11.0" options:NSNumericSearch] != NSOrderedAscending )
+
+//导航栏高度
+#define kNavigationBarH  (IOS7_OR_LATER ? 44 + [[UIApplication sharedApplication] statusBarFrame].size.height : 44)
+//状态栏高度
+#define kStatusBarH  [[UIApplication sharedApplication] statusBarFrame].size.height
+#endif /* PrefixHeader_pch */
